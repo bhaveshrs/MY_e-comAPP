@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity"
+    android:orientation="vertical"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="oreder code : "
+            android:fontFamily="@font/alfa_slab_one"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:padding="5dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="code"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            android:padding="5dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="PAYABLE AMMOUNT :"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+
+    </TextView>
+
+        <TextView
+            android:id="@+id/tvlastprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="0.0"
+            android:textColor="#79F138"
+            android:textSize="20dp"
+            android:padding="5dp">
+
+
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="pay"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>
